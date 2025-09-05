@@ -38,7 +38,8 @@ nav a {
     display: block;
     text-decoration: none;
     color: white;  
-
+    font-size: larger;
+    padding: 10px;
 }
 .container{
     display: flex;
@@ -52,15 +53,26 @@ nav a {
 .top-part-card {
     text-align: center;
     margin: 10px;
-    font-size: 2.5vmax;
+    font-size: 6vmax;
 }
 img {
     max-width: 100%;
     height: auto;
 }
-footer {
+footer, .card ul{
     padding: 1em 0 5em 0;
+    font-size: x-large;
 }
+.card ul a:hover {
+    color: #6790ff;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    border: 1px solid #ccc;
+    text-shadow: #ccc 1px 1px 2px;
+}
+.card ul a:visited {
+    color: purple;
+}
+
 #lastupdated {
     color:rgb(234, 238, 183);
     font-weight: bold;
@@ -74,15 +86,18 @@ footer {
     .container{
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows:  1fr 1fr;
+        grid-template-rows:  1fr;
         max-width: 1200px;
         margin: 0 auto;
     }
     .card {background-color: white;
     border: 1px solid #1a1a1a;
     border-radius: 20px;
-    max-width: 100
+    max-width: 100;
     height: fit-content;
+    margin: .5rem;
+    padding: 1rem;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1);
     }
     #left-card{
         grid-column: 1 / span 2;
@@ -92,11 +107,16 @@ footer {
     }
     #top-part-card{
         grid-column: 1 / span 3;
+        grid-row: 1 / span 3;
+        text-align: center;
+        font-size: 2.5vmax;
     }
     #intro-self{
         grid-column: 1 / span 2;
+        grid-row: 2 / span 1;
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
+        margin 0px 1em
     }  
     #intro{
         grid-column: 1 / span 3;
@@ -104,6 +124,7 @@ footer {
     }
     #my-pic{
         grid-column: 3 / span 1;
+        grid-row: 1 / span 2;
         max-height: auto;
         align-self: center;
         justify-self: center;
