@@ -7,12 +7,11 @@ header, footer{
     background-color: rgb(75, 75, 75);
     color: white;
     text-align: center;
-    padding: 2em auto;
     max-width: 100%;
 }
-
 #course-title{
     font-size: 3vmax;
+    padding: 2em;
     margin: 0px;
 }
 nav {
@@ -55,9 +54,21 @@ nav a {
     border-radius: 20px;
     max-width: 100%;
 }
+.top-part-card {
+    text-align: center;
+    margin: 10px;
+    font-size: 2.5vmax;
+}
 img {
     max-width: 100%;
     height: auto;
+}
+footer {
+    padding: 1em 0 5em 0;
+}
+#lastupdated {
+    color:rgb(234, 238, 183);
+    font-weight: bold;
 }
 
 @media (min-width: 800px){
@@ -68,9 +79,51 @@ img {
     .container{
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: 7% 1fr 1fr;
+        grid-template-rows:  1fr 1fr;
         max-width: 1200px;
         margin: 0 auto;
+    }
+    #left-card{
+        grid-column: 1 / span 2;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 7% 1fr 1fr;
+    }
+    #top-part-card{
+        grid-column: 1 / span 3;
+    }
+    #intro-self{
+        grid-column: 1 / span 2;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }  
+    #intro{
+        grid-column: 1 / span 2;
+        text-align: justify;
+    }
+    #my-pic{
+        grid-column: 3 / span 1;
+        max-height: 250px;
+        align-self: center;
+        justify-self: center;
+        border-radius: 50%;
+    }
+    #Ph-pic{
+        grid-column: 1 / span 1;
+        grid-row: 3 / span 1;
+        max-height: 250px;
+        align-self: center;
+        justify-self: center;
+        border-radius: 20px;
+    }
+    #about-ph{
+        grid-column: 2 / span 2;
+        grid-row: 3 / span 1;
+        text-align: justify;
+        align-self: center;
+    }
+    #right-card{
+        grid-column: 3 / span 1;
     }
     nav ul {   
         display: flex;
