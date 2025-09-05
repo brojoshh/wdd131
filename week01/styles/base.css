@@ -42,19 +42,19 @@ nav a {
 
 }
 .container{
-    background-color: white;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin: 0px auto;
-    padding: 10px;
-    max-width: 100%;
+    margin: 1rem;
+    padding: 1rem; 
+}
+#card {
+    background-color: white;
     border: 1px solid #1a1a1a;
     border-radius: 20px;
-
+    max-width: 100%;
 }
-
 img {
     max-width: 100%;
     height: auto;
