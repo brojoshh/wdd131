@@ -48,12 +48,7 @@ nav a {
     margin: 1rem;
     padding: 1rem; 
 }
-#card {
-    background-color: white;
-    border: 1px solid #1a1a1a;
-    border-radius: 20px;
-    max-width: 100%;
-}
+
 .top-part-card {
     text-align: center;
     margin: 10px;
@@ -83,6 +78,11 @@ footer {
         max-width: 1200px;
         margin: 0 auto;
     }
+    .card {background-color: white;
+    border: 1px solid #1a1a1a;
+    border-radius: 20px;
+    max-width: 100
+    }
     #left-card{
         grid-column: 1 / span 2;
         display: grid;
@@ -106,7 +106,7 @@ footer {
         max-height: 250px;
         align-self: center;
         justify-self: center;
-        border-radius: 50%;
+        border-radius: 20px;
     }
     #Ph-pic{
         grid-column: 1 / span 1;
